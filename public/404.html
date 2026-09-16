@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      const segments = window.location.pathname.split("/").filter(Boolean);
+      const basePath = segments.length > 1 ? `/${segments[0]}/` : "/";
+      sessionStorage.setItem("github-pages-redirect", window.location.pathname + window.location.search + window.location.hash);
+      window.location.replace(window.location.origin + basePath);
+    </script>
+  </head>
+  <body></body>
+</html>
