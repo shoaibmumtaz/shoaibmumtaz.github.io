@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Minto Studio — An indie game studio crafting worlds, creating legends. We build immersive experiences that players remember."
+    />
+    <title>Minto Studio — Crafting Worlds. Creating Legends.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 24V8l6 10 6-10v16' stroke='%232563eb' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='10' r='3' fill='%2306b6d4'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAVIGATION -->
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#home" class="logo" aria-label="Minto Studio home">
+          <!-- LOGO SVG -->
+          <svg
+            class="logo-mark"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient
+                id="mintoGrad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#2563eb" />
+                <stop offset="100%" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M8 36V12 L18 28 L28 12 V36"
+              stroke="url(#mintoGrad)"
+              stroke-width="4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="36" cy="14" r="4.5" fill="#06b6d4" />
+            <path
+              d="M36 14 Q40 10 42 14"
+              stroke="#06b6d4"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span class="logo-text"
+            >Minto<span class="logo-dot">.</span>Studio</span
+          >
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#games">Games</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+
+        <a href="#contact" class="btn btn-primary nav-cta">Get in Touch</a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          <span>Now in development — <em>Project Aurora</em></span>
+        </div>
+
+        <h1 class="hero-title">
+          Crafting Worlds.<br />
+          <span class="gradient-text">Creating Legends.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Minto Studio is an independent game studio building immersive,
+          story-driven experiences that stay with you long after the credits
+          roll.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#games" class="btn btn-primary">
+            Explore Our Games
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#about" class="btn btn-ghost">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <polygon points="6 4 20 12 6 20 6 4" fill="currentColor" />
+            </svg>
+            Watch Showreel
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">About the Studio</span>
+          <h2 class="section-title">
+            A small team with <span class="gradient-text">big ambitions</span>.
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              Founded in 2019, Minto Studio is a collective of designers,
+              engineers, artists, and storytellers obsessed with the craft of
+              play.
+            </p>
+            <p>
+              We believe games are more than entertainment — they're shared
+              memories, emotional journeys, and tiny universes built with care.
+              Every pixel, every line of dialogue, every note of music is placed
+              with intention.
+            </p>
+            <p>
+              From atmospheric indie adventures to ambitious narrative RPGs, we
+              build worlds players want to live in.
+            </p>
+          </div>
+
+          <div class="about-pillars reveal">
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <h3>Craft First</h3>
+              <p>
+                Every decision serves the experience. We polish until it feels
+                right.
+              </p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3>Player-Centered</h3>
+              <p>
+                We design for emotion, wonder, and the quiet moments in between.
+              </p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </div>
+              <h3>Indie Spirit</h3>
+              <p>
+                Independent, self-funded, and proudly weird. We make what we
+                love.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED GAMES -->
+    <section class="section games" id="games">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Portfolio</span>
+          <h2 class="section-title">
+            Games we're <span class="gradient-text">proud of</span>.
+          </h2>
+        </div>
+
+        <div class="games-grid">
+          <article class="game-card game-card-large reveal" data-tilt>
+            <div class="game-art game-art-image">
+              <img
+                src="assets/prado-car-games.webp"
+                alt="Prado SUV parking course in Prado Car Games: Modern Parking"
+              />
+            </div>
+            <div class="game-content">
+              <div class="game-meta">
+                <span class="tag">Driving & Parking</span>
+              </div>
+              <h3>Prado Car Games: Modern Parking</h3>
+              <p>
+                Master precise 4x4 SUV parking challenges and sharpen your
+                driving skills across demanding courses.
+              </p>
+            </div>
+          </article>
+
+          <article class="game-card reveal" data-tilt>
+            <div class="game-art game-art-image">
+              <img
+                src="assets/police-chase-games.webp"
+                alt="Police officers chasing criminals in Police Chase Games: Crime City"
+              />
+            </div>
+            <div class="game-content">
+              <div class="game-meta">
+                <span class="tag">Police Action</span>
+              </div>
+              <h3>Police Chase Games: Crime City</h3>
+              <p>
+                Patrol a crime-filled city, chase suspects, and complete
+                high-energy missions in police cars and stunt bikes.
+              </p>
+            </div>
+          </article>
+
+          <article class="game-card reveal" data-tilt>
+            <div class="game-art game-art-image">
+              <img
+                src="assets/smash-cracker-relief.webp"
+                alt="Colorful character in Smash Cracker Relief Game"
+              />
+            </div>
+            <div class="game-content">
+              <div class="game-meta"><span class="tag">Casual</span></div>
+              <h3>Smash Cracker Relief Game</h3>
+              <p>
+                Take a satisfying, stress-relieving break by smashing crackers
+                in quick, playful sessions.
+              </p>
+            </div>
+          </article>
+
+          <article class="game-card reveal" data-tilt>
+            <div class="game-art game-art-image">
+              <img
+                src="assets/happy-jelly-jump.webp"
+                alt="Jelly character jumping through a colorful candy world in Happy Jelly Jump 3D Game"
+              />
+            </div>
+            <div class="game-content">
+              <div class="game-meta"><span class="tag">Platformer</span></div>
+              <h3>Happy Jelly Jump 3D Game</h3>
+              <p>
+                Jump between colorful platforms, collect fruit jellies, and
+                avoid obstacles across lively challenges.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What We Do</span>
+          <h2 class="section-title">
+            Capabilities across the
+            <span class="gradient-text">full pipeline</span>.
+          </h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service reveal">
+            <div class="service-num">01</div>
+            <h3>Game Design</h3>
+            <p>
+              Systems design, level architecture, narrative structure, and
+              player psychology — the invisible scaffolding of great play.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-num">02</div>
+            <h3>Art & Animation</h3>
+            <p>
+              From hand-painted environments to stylized 3D characters. We craft
+              visual identities that feel unmistakably ours.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-num">03</div>
+            <h3>Engineering</h3>
+            <p>
+              Custom tooling, performant engines, and rock-solid netcode. We
+              build the tech that makes the magic reliable.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-num">04</div>
+            <h3>Audio & Music</h3>
+            <p>
+              Adaptive soundscapes and original scores composed in-house. Sound
+              is half the experience.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-num">05</div>
+            <h3>Production</h3>
+            <p>
+              Agile pipelines, milestone planning, and publishing partnerships
+              that respect creative vision.
+            </p>
+          </div>
+          <div class="service reveal">
+            <div class="service-num">06</div>
+            <h3>Live Operations</h3>
+            <p>
+              Post-launch support, seasonal content, and community stewardship.
+              The game lives beyond launch day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How We Work</span>
+          <h2 class="section-title">
+            From <span class="gradient-text">spark</span> to
+            <span class="gradient-text">ship</span>.
+          </h2>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step reveal">
+            <div class="step-marker"><span>01</span></div>
+            <div class="step-body">
+              <h3>Concept</h3>
+              <p>
+                We prototype fast, fail fast, and chase the feeling. If the core
+                loop isn't fun in a gray box, it won't be fun in final art.
+              </p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-marker"><span>02</span></div>
+            <div class="step-body">
+              <h3>Pre-Production</h3>
+              <p>
+                Vertical slice. Art direction locked. Technical risks resolved.
+                We know what we're building before we commit to building it.
+              </p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-marker"><span>03</span></div>
+            <div class="step-body">
+              <h3>Production</h3>
+              <p>
+                Bi-weekly playtests, internal reviews, and a culture of honest
+                feedback. The team plays the game — constantly.
+              </p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-marker"><span>04</span></div>
+            <div class="step-body">
+              <h3>Polish & Launch</h3>
+              <p>
+                The last 10% is 90% of the work. We ship when it's ready — and
+                we ship it right.
+              </p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-marker"><span>05</span></div>
+            <div class="step-body">
+              <h3>Live & Evolve</h3>
+              <p>
+                Community-first post-launch. Patches, content, and listening.
+                The conversation doesn't end at release.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / NUMBERS -->
+    <section class="section numbers">
+      <div class="container">
+        <div class="numbers-grid">
+          <div class="number reveal">
+            <div class="number-value">10</div>
+            <div class="number-label">Years making games</div>
+          </div>
+          <div class="number reveal">
+            <div class="number-value">20</div>
+            <div class="number-label">Titles released</div>
+          </div>
+          <div class="number reveal">
+            <div class="number-value">1M</div>
+            <div class="number-label">Players</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section news" id="news">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Latest Updates</span>
+          <h2 class="section-title">
+            From the <span class="gradient-text">dev blog</span>.
+          </h2>
+        </div>
+
+        <div class="news-grid">
+          <a href="#" class="news-card reveal">
+            <div class="news-img news-img-1"></div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span>Sep 04, 2026</span>
+                <span>Development</span>
+              </div>
+              <h3>Project Aurora — A first look at the Archipelago</h3>
+              <p>
+                Our art team breaks down the hand-painted environments and the
+                color philosophy behind our upcoming flagship title.
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="news-card reveal">
+            <div class="news-img news-img-2"></div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span>Aug 18, 2026</span>
+                <span>Studio</span>
+              </div>
+              <h3>Minto at Gamescom 2026 — booth & playable demo</h3>
+              <p>
+                Come play the first 20 minutes of Project Aurora on the show
+                floor. Hall 10.2, booth B-041.
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="news-card reveal">
+            <div class="news-img news-img-3"></div>
+            <div class="news-body">
+              <div class="news-meta">
+                <span>Jul 29, 2026</span>
+                <span>Postmortem</span>
+              </div>
+              <h3>Ember Hollow postmortem: what we learned</h3>
+              <p>
+                A candid look at the design decisions that worked, the ones that
+                didn't, and what we'd do differently.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS CTA -->
+    <section class="section careers" id="careers">
+      <div class="container">
+        <div class="careers-card reveal">
+          <div class="careers-content">
+            <span class="eyebrow light">Join the Team</span>
+            <h2>
+              We're hiring
+              <span class="gradient-text-light">dreamers & doers</span>.
+            </h2>
+            <p>
+              Senior engineers, narrative designers, 3D artists, audio wizards —
+              if you care about the craft, we want to talk.
+            </p>
+            <div class="careers-actions">
+              <a href="#" class="btn btn-light">View Open Roles</a>
+              <a href="#contact" class="btn btn-ghost-light"
+                >Send a speculative application</a
+              >
+            </div>
+          </div>
+          <div class="careers-visual">
+            <div class="careers-orb"></div>
+            <div class="careers-orb careers-orb-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-cta">
+            <h2>Have a project in mind?</h2>
+            <p>
+              Press inquiries, publishing partnerships, or just want to say hi —
+              we'd love to hear from you.
+            </p>
+            <a href="mailto:mintofun18@gmail.com" class="btn btn-primary"
+              >mintofun18@gmail.com</a
+            >
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Studio</h4>
+              <a href="#about">About</a>
+              <a href="#careers">Careers</a>
+              <a href="#news">News</a>
+              <a href="#">Press Kit</a>
+            </div>
+            <div class="footer-col">
+              <h4>Games</h4>
+              <a href="#games">Prado Car Games</a>
+              <a href="#games">Police Chase Games</a>
+              <a href="#games">Smash Cracker Relief</a>
+              <a href="#games">Happy Jelly Jump 3D</a>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <a href="#">Twitter / X</a>
+              <a href="#">Discord</a>
+              <a href="#">YouTube</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <svg
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 36V12 L18 28 L28 12 V36"
+                stroke="#2563eb"
+                stroke-width="4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="36" cy="14" r="4.5" fill="#06b6d4" />
+            </svg>
+            <span>Minto Studio</span>
+          </div>
+          <div class="footer-legal">
+            <span>© 2026 Minto Studio. All rights reserved.</span>
+            <a href="privacy.html">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
